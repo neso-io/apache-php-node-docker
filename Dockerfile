@@ -8,7 +8,7 @@ RUN pecl install mcrypt-1.0.2
 RUN apt-get update && apt-get install -y \
         zlib1g-dev \
         libmcrypt-dev \
-    && docker-php-ext-install -j$(nproc) zip pdo pdo_mysql
+    && docker-php-ext-install -j$(nproc) zip pdo pdo_mysql \
     && docker-php-ext-enable mcrypt
 
 ### Install Composer
