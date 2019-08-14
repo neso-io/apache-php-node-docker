@@ -1,4 +1,4 @@
-FROM php:7.1.3-apache
+FROM php:7.3-apache
 
 ### Install OS tools
 RUN apt-get update && apt-get install --yes curl git
