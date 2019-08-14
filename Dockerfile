@@ -1,7 +1,7 @@
 FROM php:7.3-apache
 
 ### Install OS tools
-RUN apt-get update && apt-get install --yes curl git
+RUN apt-get update && apt-get install --yes curl git libmcrypt-dev libreadline-dev
 
 ### Install PHP extras
 RUN pecl install mcrypt-1.0.2
