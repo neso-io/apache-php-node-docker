@@ -4,6 +4,7 @@ FROM php:7.3-apache
 RUN apt-get update && apt-get install --yes curl git
 
 ### Install PHP extras
+RUN pecl install mcrypt-1.0.2
 RUN apt-get update && apt-get install -y \
         zlib1g-dev \
         libmcrypt-dev \
